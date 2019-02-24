@@ -1,11 +1,11 @@
-# exercise on https://deanattali.com/blog/building-shiny-apps-tutorial/
+# based on the excellent example on https://deanattali.com/blog/building-shiny-apps-tutorial/
 
 library(shiny)
 library(ggplot2)
 library(data.table)
 library(DT) # for `renderDataTable`
 
-# The data is put in a local folder named `Data`
+# The data are put in a local folder named `Data`
 bcl <- setDT(read.csv("./Data/bcl-data.csv", stringsAsFactors = FALSE))
 
 ui <- fluidPage(
